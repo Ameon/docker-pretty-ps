@@ -20,6 +20,16 @@ cd docker
 git clone git@github.com:Ameon/docker-pretty-ps.git
 ```
 
+4. Добавление алиаса для PowerShell
+
+```powershell
+function Invoke-DockerPrettyPs {
+  python "D:\docker\docker-pretty-ps\docker_pretty_ps.py"
+}
+Set-Alias docker-pretty-ps Invoke-DockerPrettyPs
+Set-Alias dps docker-pretty-ps
+```
+
 ## Original Documentation
 
 Tired of that awful super wide ```docker ps``` output? I'm always shrinking my terminal output just to see what ```docker ps``` is trying saying... and it's making me go blind. If you commiserate, try `docker-pretty-ps`! Just run ```docker-pretty-ps``` and get your output long, instead of wide and with **COLORS!**
