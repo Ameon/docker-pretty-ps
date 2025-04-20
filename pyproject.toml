@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-pretty-ps"
+version = "1.0.2"
+description = "Pretty formatter for `docker ps` output"
+authors = [
+  { name="politeauthority", email="fullteronalix0@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.6"
+keywords = ["docker", "cli", "pretty", "formatter"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.scripts]
+docker-pretty-ps = "dockerprettyps:run_cli"
+
+[tool.setuptools]
+packages = ["dockerprettyps", "tests", "tests.data"]
+include-package-data = true
