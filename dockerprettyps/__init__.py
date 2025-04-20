@@ -163,18 +163,19 @@ def _parsed_args():
 
 def version():
     """
-    Displays docker-pretty-ps version to the cli.
-    Unit tested: test_version
-
+    Displays docker-pretty-ps version to the CLI.
     """
-    spacing = "                                                        "
+    column_offset = 36  # ⬅️ управляй этим значением
+    left = "docker-pretty-ps"
+    right1 = "@ameon"
+    right2 = "https://github.com/ameon/docker-pretty-ps"
+
     print(__title__)
-    print("\t%sdocker-pretty-ps%s                                Version: %s" % (BOLD, ENDC, __version__))
-    print("%s@politeauthority" % spacing)
-    print("%shttps://github.com/politeauthority/docker-pretty-ps\n\n" % spacing)
+    print(f"{left.ljust(column_offset)}Version: {__version__}")
+    print(" " * column_offset + right1)
+    print(" " * column_offset + right2 + "\n")
 
     return True
-
 
 def get_raw_containers():
     """

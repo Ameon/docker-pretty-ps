@@ -1,5 +1,13 @@
 # docker-pretty-ps (by Ameon)
 
+## Новая установка
+
+```bash
+pipx uninstall docker-pretty-ps
+pipx install .
+```
+
+
 ## Установка Windows 
 
 1. Создаем папку docker на диске D:/

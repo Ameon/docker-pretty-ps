@@ -7,7 +7,7 @@ name = "docker-pretty-ps"
 version = "1.0.2"
 description = "Pretty formatter for `docker ps` output"
 authors = [
-  { name="politeauthority", email="fullteronalix0@gmail.com" }
+  { name="ameon", email="ameon@ya.ru" }
 ]
 license = { text = "MIT" }
 readme = "README.md"
